@@ -2,4 +2,4 @@
 
 Basic Javascript
 
-> Environment: Browser(Chrome)
+> Environment: Browser(Chrome) console

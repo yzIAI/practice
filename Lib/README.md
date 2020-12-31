@@ -2,4 +2,4 @@
 
 Frontend Javascript Library
 
-> Environment: Browser(Chrome)
+> Environment: Browser(Chrome) console
