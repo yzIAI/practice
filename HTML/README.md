@@ -6,4 +6,5 @@ HyperText Markup Language
 
 ## Catalog
 
-- [1000](./1000/README.md): HTML Document Structure
+- [100](./100/README.md): HTML Document Structure
+- [101](./101/README.md): HTML Elements
