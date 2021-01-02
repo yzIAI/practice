@@ -1,12 +1,12 @@
-# NODE200: [Express] Deal with Request 
+# Node200: [Express] Simple Response
 
 ## Task
-- Send a GET request to http://localhost/hello/name and see what would happen
-- Send a proper POST request to http://localhost/hello to get a reasonable response
-- Through the attempts above, understand `index.js`
-- Provide an interface for summation of an int array which would be given in POST body:
-```json
-{
-  "array" : [1, 2, 3, 4, ...]
-}
-```
+- Run the example
+- Send a GET request to `http://localhost:3000/hello` to see the plain-text response
+- Send a POST request to `http://localhost:3000/` to see the json response
+- Try to understand `index.js`, you can modify the code and run it again.
+
+## Guide
+
+- Install dependency `npm i`
+- Run `node index.js` or `node .`
