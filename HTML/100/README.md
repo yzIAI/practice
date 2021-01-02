@@ -1,4 +1,4 @@
-# HTML1000: HTML Document Structure
+# HTML100: HTML Document Structure
 
 ## Task
 
