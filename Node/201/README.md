@@ -1,18 +1,17 @@
 # Node201: [Express] Simple Request
 
 ## Task
-- Run the example
-- Send a GET request to `http://localhost:3000/hello` to see the plain-text response
+- Run the `index.js`
+- Send a GET request to `http://localhost:3000/hello?name=world` to see the plain-text response
 - Send a POST request to `http://localhost:3000/body` to see the response
-- Send a POST request to `http://localhost:3000/body` with body `{ "content": "anything here"}` using json format to see the response
+- Send a POST request to `http://localhost:3000/body` with body `{ "content": "anything there?"}` using JSON format to see the response
 - Send a POST request with different body value to see the response
-- Send a PUT request to `http://localhost:3000/params/anythinghere` to see the response, can you find something interesting
-- Send a DELETE request to `http://localhost:3000/del`
-- Try to understand `index.js`, you can modify the code and run it again.
+- Send a PUT request to `http://localhost:3000/params/hahaha` to see the response, and try to send it again with a JSON body `{ "content": "anything there?"}`.
+- Send a DELETE request to `http://localhost:3000/bye?name=IAI`
+- Try to understand `index.js`, you can modify the code and play with it.
 
-## Questions
-1. For all the four methods mentioned above (i.e. Get, Post, Put, Delete), which methods can have JSON body when sending the request?
-2. There is a limit of JSON body, can you figure out how to change it?
+## Question
+- In all the four methods mentioned above (Get, Post, Put, Delete), which methods allow http body?
 
 ## Guide
 
