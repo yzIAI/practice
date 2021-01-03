@@ -1,4 +1,5 @@
 // Node202
+
 'use strict'
 
 const express = require('express')
@@ -10,7 +11,7 @@ let api = express.Router() // router
 app.use('/api', api) // register with middleware
 
 const controller = require('./controller.js')
-api.use('/test', controller)
+api.use('/book', controller)
 
 app.listen(3001, () => {
   console.log('# API server started!')

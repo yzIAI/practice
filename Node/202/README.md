@@ -6,8 +6,8 @@ Finish the controller file to meet the following requirements
 - `id` is a string of length 6 and `name` is a string with length greater than 0.
 - There is a global variable called `books`, this is where you store all your books. ***Do not change the type of this variable.***
 - You have to implement the POST (adding a book), DELETE (delete a book), GET (get the name of a book by providing an id) and PUT (modify the name of a book by providing an id).
-- You can modify anything in the controller file but the code style should be consistent and clear, meeting IAI standard.
-_ You have to handle all possible cases you come up with, returning reasonable error messages or suitable output.
+- You can modify anything in the `controller.js` but the code style should be consistent and clear, meeting IAI standard.
+- You have to handle all possible cases you come up with, returning reasonable error messages with reasonable http status code.
 
 ## Question
 It is very inconvenient to rerun the program every time after modification, there is a package called 'nodemon', reruning the program automatically after saving, can you figure out how to use it?

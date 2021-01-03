@@ -4,19 +4,19 @@ const router = express.Router()
 let books = {}
 
 router.get('/', async (req, resp) => {
-  resp.send('test')
+  resp.send('GET')
 })
 
 router.post('/:id', async (req, resp) => {
-  resp.send('test post')
+  resp.send('POST')
 })
 
 router.put('/:id', async (req, resp) => {
-  resp.send('test put')
+  resp.send('PUT')
 })
 
 router.delete('/:id', async (req, resp) => {
-  resp.send('test delete')
+  resp.send('DELETE')
 })
 
 module.exports = router
