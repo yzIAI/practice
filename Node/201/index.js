@@ -29,7 +29,9 @@ app.put('/params/:id', async (req, resp) => {
 
 // DELETE request
 app.delete('/bye', async (req, resp) => {
-  resp.send('bye, ' + req.query.name)
+  // extract token from header
+  const token = req.get('token')
+  resp.send('token is ' + token)
 })
 
 app.listen(3000, () => {
