@@ -1,6 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
+let books = {}
+
 router.get('/', async (req, resp) => {
   resp.send('test')
 })
