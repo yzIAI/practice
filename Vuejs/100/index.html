@@ -1,0 +1,37 @@
+<!-- Vuejs100 -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Example</title>
+  <!-- import Vuejs 3.0 from jsdelivr -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@next/dist/vue.global.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- display message -->
+    <h1>{{ msg }}</h1>
+    <!-- bind event -->
+    <button v-on:click="cot++">Click Me!</button>
+    <h1>Count: {{ cot }}</h1>
+    <h1>Square: {{ cot * cot }}</h1>
+    <h1>Sqrt: {{ sqrt }}</h1>
+  </div>
+  <script type="text/javascript">
+    const App = {
+      // data must be a function returning the data object
+      data: () => ({
+        msg: 'Hello, Vuejs!',
+        cot: 0
+      }),
+      // automatically updated values
+      computed: {
+        sqrt () {
+          return Math.sqrt(this.cot)
+        }
+      }
+    }
+    // create app and mount
+    Vue.createApp(App).mount('#app')
+  </script>
+</body>
+</html>
