@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tab Title</title>
+  <title>JS103</title>
 </head>
 <body>
   <p>Right click, choose `inspect` and switch to `console` mode to open the console.</p>
@@ -41,6 +41,11 @@
     array.unshift(2)
     console.log("add an element to the beginning: ", array)
     console.log("find the index of an element(4): ", array.indexOf(4))
+    // array functions
+    console.log('array map(square): ', array.map(x => x * x))
+    console.log('array filter(>5): ', array.filter(x => x > 5))
+    console.log('array sort: ', array.sort())
+    console.log('array sort(customize): ', array.sort((a, b) => b - a))
   </script>
 </body>
 </html>

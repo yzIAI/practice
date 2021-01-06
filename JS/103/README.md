@@ -1,7 +1,6 @@
-# JS103: JavaScript Syntactic Sugar
+# JS103: Syntactic Sugar
 
 ## Task
 
 - Read and understand `index.html`
-- Remember the syntactic sugar
-- Try to be familiar with them 
+- Try to be familiar with them
