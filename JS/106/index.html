@@ -1,0 +1,26 @@
+<!-- JS106 -->
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <p>Right click, choose `inspect` and switch to `console` mode to open the console.</p>
+  <script type="text/javascript">
+    function delay(s){
+      return new Promise(function(resolve,reject){
+       setTimeout(resolve,s)
+      })
+    }
+    delay(1000).then(()=>{
+      console.log(1)
+      return delay(2000)
+    }).then(()=>{
+      console.log(2)
+      return delay(3000)
+    }).then(()=>{
+      console.log(3)
+    })
+
+  </script>
+</body>
+</html>
