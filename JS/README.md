@@ -8,3 +8,4 @@ Basic Javascript
 
 - [100](./100/): Variables and Objects
 - [103](./103/): Syntactic Sugar
+- [106](./106/): Promise Example
