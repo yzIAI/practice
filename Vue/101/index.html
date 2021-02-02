@@ -1,0 +1,34 @@
+<!-- Vue101 -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Composition Api</title>
+  <!-- import Vue 3.0 from jsdelivr -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@next/dist/vue.global.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- bind event -->
+    <button v-on:click="cot++">Click Me!</button>
+    <h1>Count: {{ cot }}</h1>
+    <h1>Square: {{ square }}</h1>
+    <h1>Sqrt: {{ sqrt }}</h1>
+  </div>
+  <script type="text/javascript">
+    const App = {
+      setup () {
+        const cot = Vue.ref(0)
+        const square = Vue.computed(() => cot.value * cot.value)
+        const sqrt = Vue.computed(() =>  Math.sqrt(cot.value))
+        return {
+          cot,
+          square,
+          sqrt
+        }
+      }
+    }
+    // create app and mount
+    Vue.createApp(App).mount('#app')
+  </script>
+</body>
+</html>
