@@ -1,4 +1,4 @@
-# Vuejs100: Basic Example
+# Vue100: Basic Example
 
 ## Task
 
