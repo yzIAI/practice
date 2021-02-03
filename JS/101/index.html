@@ -1,0 +1,69 @@
+<!-- JS101 -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tab Title</title>
+</head>
+<body>
+  <p>Right click, choose `inspect` and switch to `console` mode to open the console.</p>
+  <script type="text/javascript">
+    const a = 1
+    // If Statement
+    if (a > 0) console.log('a > 0')
+    if (a <= 0) {
+      console.log('a <= 0')
+      console.log('Negative')
+    }
+
+    // Branch Structure
+    if (a > 0) console.log('a > 0')
+    else console.log('a <= 0')
+
+    if (a > 100) console.log('a > 100')
+    else if (a > 90) console.log('a > 90')
+    else if (a > 80) console.log('a > 80')
+    else {
+      if (a > 70) console.log('a > 70')
+      if (a > 60) console.log('a > 60')
+      else console.log('a <= 60')
+    }
+
+    // For Statement
+    let sum = 0
+    console.log(sum)
+    for (i = 1; i <= 10; ++i) {
+      sum += i
+      console.log('+ ', i, ' = ', sum)
+    }
+
+    const numbers = [1, 2, 3, 4, 5, 6]
+    for (const x of numbers) if (x > 2) console.log(x, ' > 2')
+
+    // While Statement
+    let b = 10
+    while (b > 0) {
+      console.log(b, ' > 0')
+      b--
+    }
+    console.log(b)
+
+    // Break & Continue
+
+    for (let i = 1; i <= 10; ++i) {
+      if (i < 3) {
+        console.log('continue')
+        continue
+        console.log(i)
+      }
+      console.log(i)
+      if (i > 6) break
+    }
+
+    // Loop Structure
+    for (let i = 1; i <= 3; ++i) {
+      for (let j = 1; j <= 3; ++j) console.log('i * j = ', i * j)
+      for (let k = 3; k >= 1; --k) console.log('i * k = ', i * k)
+    }
+  </script>
+</body>
+</html>
