@@ -28,21 +28,26 @@
       else console.log('a <= 60')
     }
 
+    // Expression rather than judgement
+    if (a) console.log(a, '--> True')
+    if (a + 10) console.log(a + 10, '--> True')
+    if (a - 1) console.log(a - 1, '--> True')
+
     // For Statement
     let sum = 0
     console.log(sum)
     for (i = 1; i <= 10; ++i) {
       sum += i
-      console.log('+ ', i, ' = ', sum)
+      console.log('+', i, '=', sum)
     }
 
     const numbers = [1, 2, 3, 4, 5, 6]
-    for (const x of numbers) if (x > 2) console.log(x, ' > 2')
+    for (const x of numbers) if (x > 2) console.log(x, '> 2')
 
     // While Statement
     let b = 10
     while (b > 0) {
-      console.log(b, ' > 0')
+      console.log(b, '> 0')
       b--
     }
     console.log(b)
@@ -60,9 +65,10 @@
     }
 
     // Loop Structure
-    for (let i = 1; i <= 3; ++i) {
-      for (let j = 1; j <= 3; ++j) console.log('i * j = ', i * j)
-      for (let k = 3; k >= 1; --k) console.log('i * k = ', i * k)
+    for (let i = 1; i; ++i) {
+      for (let j = 1; j <= 3; ++j) console.log('i * j =', i * j)
+      for (let k = 3; k >= 1; --k) console.log('i * k =', i * k)
+      if (i > 2) break
     }
   </script>
 </body>
