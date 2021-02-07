@@ -1,0 +1,59 @@
+<!-- Vue102 -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Methods, Watchers</title>
+  <!-- import Vue 3.0 from jsdelivr -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@next/dist/vue.global.min.js"></script>
+  <!-- import axios from jsdelivr -->
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- bind event -->
+    <button @click="cot++">Click Me!</button>
+    <h1>Count: {{ cot }}</h1>
+    <h1>Sqrt: {{ sqrt() }}</h1>
+    <h1>Is {{ cot }} your lucky number?</h1>
+    <h1>{{ answer }}</h1>
+  </div>
+  <script type="text/javascript">
+    const App = {
+      data: () => ({
+        msg: 'Hello, Vuejs!',
+        cot: 0,
+        answer: ''
+      }),
+      // watch option is most useful when you want to perform asynchronous or expensive operations in response to changing data.
+      watch: {
+        cot() {
+          if (Number.isInteger(this.cot)){
+            this.getAnswer()
+          } else {
+            this.answer = "Please enter an integer"
+          }
+        }
+      },
+      // define a list of functions
+      methods: {
+        sqrt () {
+          return Math.sqrt(this.cot)
+        },
+        getAnswer () {
+          this.answer = 'Thinking...'
+          axios
+            .get('https://yesno.wtf/api')
+            .then(response => {
+              this.answer = response.data.answer
+            })
+            .catch(error => {
+              this.answer = 'Error! Could not reach the API. ' + error
+            })
+        }
+      }
+    }
+    // create app and mount
+    Vue.createApp(App).mount('#app')
+  </script>
+</body>
+</html>
