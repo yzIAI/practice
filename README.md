@@ -7,7 +7,7 @@ Coding Practice
 - [HTML](./HTML/)
 - [CSS](./CSS/)
 - [JS](./JS/) (Basic JavaScript, axios, swal, etc.)
-- [Vuejs](./Vuejs/) 3.0
+- [Vue](./Vue/) 3.0
 - [Node](./Node/) (Nodejs, Express, Mongodb, etc.)
 
 ## Practice Guide

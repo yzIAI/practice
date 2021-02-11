@@ -10,3 +10,5 @@ Basic Javascript
 - [101](./101/): Branch and Loop Structure
 - [103](./103/): Syntactic Sugar
 - [106](./106/): Promise Example
+
+- [200](./200/): Print prime numbers
